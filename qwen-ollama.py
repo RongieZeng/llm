@@ -26,6 +26,6 @@ response = qwen_ollama(prompt)
 print(response)
 
 # 实体识别
-prompt = "我在公园上城这里呢，华标说他在公司###请识别上面这句话中的实体，并给出一个实体识别结果。使用json格式返回（只返回json结果）,不要输出其他内容。,注意,json的key用英文，不要用中文。json的value可以用中文，格式严格按下面：{\"entity\":\"实体1\",\"value\":\"实体的值\"}"
+prompt = "我在公园上城这里呢，华标说他在公司###请识别上面这句话中的实体，并给出一个实体识别结果。使用json格式返回（只返回json结果）,不要输出其他内容。,注意,json的key用英文.不要用中文.json的value可以用中文，格式严格按下面：{\"entity\":\"实体1\",\"value\":\"实体的值\"}"
 response = qwen_ollama(prompt)
 print(response)
